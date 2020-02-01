@@ -1,0 +1,1009 @@
+@prefix ns1: <http://tender.hack.spb/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://tender.hack.spb/1160255> ns1:hasDeveloper <http://tender.hack.spb/15/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/2/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1160255/name> ;
+    ns1:hasProductType <http://tender.hack.spb/2/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 4e+03 ] ;
+    ns1:token [ ns1:label "ударный" ;
+            ns1:lemma "ударный" ],
+        [ ns1:label "аккумуляторный" ;
+            ns1:lemma "аккумуляторный" ],
+        [ ns1:label "wh14dl2" ;
+            ns1:lemma "wh14dl2" ],
+        [ ns1:label "hitachi" ;
+            ns1:lemma "hitachi" ],
+        [ ns1:label "шуруповерт" ;
+            ns1:lemma "шуруповерт" ] .
+
+<http://tender.hack.spb/1160280> ns1:hasDeveloper <http://tender.hack.spb/16/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/2/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1160280/name> ;
+    ns1:hasProductType <http://tender.hack.spb/2/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 1.485e+03 ] ;
+    ns1:token [ ns1:label "es" ;
+            ns1:lemma "es" ],
+        [ ns1:label "fit" ;
+            ns1:lemma "fit" ],
+        [ ns1:label "шуруповерт" ;
+            ns1:lemma "шуруповерт" ],
+        [ ns1:label "электрический" ;
+            ns1:lemma "электрический" ] .
+
+<http://tender.hack.spb/1160298> ns1:hasDeveloper <http://tender.hack.spb/17/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/2/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1160298/name> ;
+    ns1:hasProductType <http://tender.hack.spb/2/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 2.2e+03 ] ;
+    ns1:token [ ns1:label "dwd024" ;
+            ns1:lemma "dwd024" ],
+        [ ns1:label "дрель" ;
+            ns1:lemma "дрель" ],
+        [ ns1:label "dewalt" ;
+            ns1:lemma "dewalt" ] .
+
+<http://tender.hack.spb/1160299> ns1:hasDeveloper <http://tender.hack.spb/3/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/2/good-type> ;
+    ns1:hasLength [ ns1:label "мм" ;
+            ns1:quantity 1.3e+01 ] ;
+    ns1:hasName <http://tender.hack.spb/1160299/name> ;
+    ns1:hasProductType <http://tender.hack.spb/2/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 6.46e+03 ] ;
+    ns1:token [ ns1:label "kd990ka" ;
+            ns1:lemma "kd990ka" ],
+        [ ns1:label "black" ;
+            ns1:lemma "black" ],
+        [ ns1:label "&decker" ;
+            ns1:lemma "&decker" ] .
+
+<http://tender.hack.spb/1160372> ns1:hasDeveloper <http://tender.hack.spb/3/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/2/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1160372/name> ;
+    ns1:hasProductType <http://tender.hack.spb/2/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 3.7e+03 ] ;
+    ns1:token [ ns1:label "epc14cabk" ;
+            ns1:lemma "epc14cabk" ],
+        [ ns1:label "дрель" ;
+            ns1:lemma "дрель" ],
+        [ ns1:label "black" ;
+            ns1:lemma "black" ],
+        [ ns1:label "&decker" ;
+            ns1:lemma "&decker" ],
+        [ ns1:label "аккумуляторная" ;
+            ns1:lemma "аккумуляторный" ] .
+
+<http://tender.hack.spb/1160395> ns1:hasDeveloper <http://tender.hack.spb/9/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/2/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1160395/name> ;
+    ns1:hasProductType <http://tender.hack.spb/2/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 6.42e+03 ] ;
+    ns1:token [ ns1:label "эрмм2" ;
+            ns1:lemma "эрмм2" ],
+        [ ns1:label "дрель" ;
+            ns1:lemma "дрель" ],
+        [ ns1:label "зубр" ;
+            ns1:lemma "зубр" ],
+        [ ns1:label "ударная" ;
+            ns1:lemma "ударный" ],
+        [ ns1:label "зду" ;
+            ns1:lemma "зду" ] .
+
+<http://tender.hack.spb/1160427> ns1:hasDeveloper <http://tender.hack.spb/9/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/2/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1160427/name> ;
+    ns1:hasProductType <http://tender.hack.spb/2/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 2.365e+03 ] ;
+    ns1:token [ ns1:label "зубр" ;
+            ns1:lemma "зубр" ],
+        [ ns1:label "сетевая" ;
+            ns1:lemma "сетевой" ],
+        [ ns1:label "зсш" ;
+            ns1:lemma "зсш" ],
+        [ ns1:label "дрель" ;
+            ns1:lemma "дрель" ] .
+
+<http://tender.hack.spb/1160461> ns1:hasDeveloper <http://tender.hack.spb/10/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/2/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1160461/name> ;
+    ns1:hasProductType <http://tender.hack.spb/2/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 1.9e+03 ] ;
+    ns1:token [ ns1:label "fe1" ;
+            ns1:lemma "fe1" ],
+        [ ns1:label "дрель" ;
+            ns1:lemma "дрель" ],
+        [ ns1:label "ford" ;
+            ns1:lemma "ford" ],
+        [ ns1:label "ударная" ;
+            ns1:lemma "ударный" ] .
+
+<http://tender.hack.spb/1160533> ns1:hasDeveloper <http://tender.hack.spb/4/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/2/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1160533/name> ;
+    ns1:hasProductType <http://tender.hack.spb/2/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 5.505e+03 ] ;
+    ns1:token [ ns1:label "14" ;
+            ns1:lemma "14" ],
+        [ ns1:label "комплектом" ;
+            ns1:lemma "комплект" ],
+        [ ns1:label "аксессуаров" ;
+            ns1:lemma "аксессуар" ],
+        [ ns1:label "set" ;
+            ns1:lemma "set" ],
+        [ ns1:label "дрель" ;
+            ns1:lemma "дрель" ],
+        [ ns1:label "metabo" ;
+            ns1:lemma "metabo" ],
+        [ ns1:label "аккумуляторная" ;
+            ns1:lemma "аккумуляторный" ] .
+
+<http://tender.hack.spb/1160540> ns1:hasDeveloper <http://tender.hack.spb/4/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/2/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1160540/name> ;
+    ns1:hasProductType <http://tender.hack.spb/2/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 4.83e+03 ] ;
+    ns1:token [ ns1:label "дрель" ;
+            ns1:lemma "дрель" ],
+        [ ns1:label "ltx" ;
+            ns1:lemma "ltx" ],
+        [ ns1:label "metabo" ;
+            ns1:lemma "metabo" ],
+        [ ns1:label "аккумуляторная" ;
+            ns1:lemma "аккумуляторный" ],
+        [ ns1:label "18" ;
+            ns1:lemma "18" ],
+        [ ns1:label "impuls" ;
+            ns1:lemma "impuls" ] .
+
+<http://tender.hack.spb/1160567> ns1:hasDeveloper <http://tender.hack.spb/3/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/2/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1160567/name> ;
+    ns1:hasProductType <http://tender.hack.spb/2/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 2.145e+03 ] ;
+    ns1:token [ ns1:label "дрель" ;
+            ns1:lemma "дрель" ],
+        [ ns1:label "&" ;
+            ns1:lemma "&" ],
+        [ ns1:label "decker" ;
+            ns1:lemma "decker" ],
+        [ ns1:label "bdcdd12k1" ;
+            ns1:lemma "bdcdd12k1" ],
+        [ ns1:label "аккумуляторная" ;
+            ns1:lemma "аккумуляторный" ] .
+
+<http://tender.hack.spb/1160574> ns1:hasDeveloper <http://tender.hack.spb/3/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/2/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1160574/name> ;
+    ns1:hasProductType <http://tender.hack.spb/2/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 3.175e+03 ] ;
+    ns1:token [ ns1:label "decker" ;
+            ns1:lemma "decker" ],
+        [ ns1:label "&" ;
+            ns1:lemma "&" ],
+        [ ns1:label "дрель" ;
+            ns1:lemma "дрель" ],
+        [ ns1:label "аккумуляторная" ;
+            ns1:lemma "аккумуляторный" ],
+        [ ns1:label "bdcdd12k1b" ;
+            ns1:lemma "bdcdd12k1b" ] .
+
+<http://tender.hack.spb/1160601> ns1:hasDeveloper <http://tender.hack.spb/8/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/2/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1160601/name> ;
+    ns1:hasProductType <http://tender.hack.spb/2/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 1.335e+03 ] ;
+    ns1:token [ ns1:label "ударный" ;
+            ns1:lemma "ударный" ],
+        [ ns1:label "аккумуляторный" ;
+            ns1:lemma "аккумуляторный" ],
+        [ ns1:label "greenworks" ;
+            ns1:lemma "greenworks" ],
+        [ ns1:label "3801307" ;
+            ns1:lemma "3801307" ],
+        [ ns1:label "зарядного" ;
+            ns1:lemma "зарядный" ],
+        [ ns1:label "шуруповерт" ;
+            ns1:lemma "шуруповерт" ],
+        [ ns1:label "g" ;
+            ns1:lemma "g" ],
+        [ ns1:label "24v" ;
+            ns1:lemma "24v" ],
+        [ ns1:label "устройства" ;
+            ns1:lemma "устройство" ],
+        [ ns1:label "аккумулятора" ;
+            ns1:lemma "аккумулятор" ] .
+
+<http://tender.hack.spb/1165173> ns1:hasDeveloper <http://tender.hack.spb/11/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/0/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1165173/name> ;
+    ns1:hasProductType <http://tender.hack.spb/0/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 3.93e+03 ] ;
+    ns1:token [ ns1:label "white" ;
+            ns1:lemma "white" ],
+        [ ns1:label "напольный" ;
+            ns1:lemma "напольный" ],
+        [ ns1:label "vitek" ;
+            ns1:lemma "vitek" ],
+        [ ns1:label "vt" ;
+            ns1:lemma "vt" ],
+        [ ns1:label "вентилятор" ;
+            ns1:lemma "вентилятор" ] .
+
+<http://tender.hack.spb/1165175> ns1:hasDeveloper <http://tender.hack.spb/11/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/0/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1165175/name> ;
+    ns1:hasProductType <http://tender.hack.spb/0/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 4.2e+03 ] ;
+    ns1:token [ ns1:label "напольный" ;
+            ns1:lemma "напольный" ],
+        [ ns1:label "vt" ;
+            ns1:lemma "vt" ],
+        [ ns1:label "вентилятор" ;
+            ns1:lemma "вентилятор" ],
+        [ ns1:label "white" ;
+            ns1:lemma "white" ],
+        [ ns1:label "vitek" ;
+            ns1:lemma "vitek" ] .
+
+<http://tender.hack.spb/1165186> ns1:hasDeveloper <http://tender.hack.spb/0/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/0/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1165186/name> ;
+    ns1:hasProductType <http://tender.hack.spb/0/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 4e+02 ] ;
+    ns1:token [ ns1:label "настольный" ;
+            ns1:lemma "настольный" ],
+        [ ns1:label "вентилятор" ;
+            ns1:lemma "вентилятор" ],
+        [ ns1:label "polaris" ;
+            ns1:lemma "polaris" ],
+        [ ns1:label "puf" ;
+            ns1:lemma "puf" ],
+        [ ns1:label "12" ;
+            ns1:lemma "12" ] .
+
+<http://tender.hack.spb/1165203> ns1:hasDeveloper <http://tender.hack.spb/18/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/0/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1165203/name> ;
+    ns1:hasProductType <http://tender.hack.spb/0/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 4.21e+03 ] ;
+    ns1:token [ ns1:label "delta" ;
+            ns1:lemma "delta" ],
+        [ ns1:label "dl" ;
+            ns1:lemma "dl" ],
+        [ ns1:label "вентилятор" ;
+            ns1:lemma "вентилятор" ] .
+
+<http://tender.hack.spb/1171591> ns1:hasDeveloper <http://tender.hack.spb/12/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/1/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1171591/name> ;
+    ns1:hasProductType <http://tender.hack.spb/1/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 1.15e+02 ] ;
+    ns1:token [ ns1:label "фломастеры" ;
+            ns1:lemma "фломастер" ],
+        [ ns1:label "двухсторонние" ;
+            ns1:lemma "двухсторонний" ],
+        [ ns1:label "erich" ;
+            ns1:lemma "erich" ],
+        [ ns1:label "10цв" ;
+            ns1:lemma "10цть" ],
+        [ ns1:label "krause" ;
+            ns1:lemma "krause" ] .
+
+<http://tender.hack.spb/1171595> ns1:hasDeveloper <http://tender.hack.spb/1/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/1/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1171595/name> ;
+    ns1:hasProductType <http://tender.hack.spb/1/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 1.15e+02 ] ;
+    ns1:token [ ns1:label "фломастеров" ;
+            ns1:lemma "фломастер" ],
+        [ ns1:label "шт" ;
+            ns1:lemma "шт" ],
+        [ ns1:label "12" ;
+            ns1:lemma "12" ],
+        [ ns1:label "набор" ;
+            ns1:lemma "набор" ],
+        [ ns1:label "play" ;
+            ns1:lemma "play" ],
+        [ ns1:label "doh" ;
+            ns1:lemma "doh" ],
+        [ ns1:label "цветных" ;
+            ns1:lemma "цветной" ] .
+
+<http://tender.hack.spb/1171606> ns1:hasDeveloper <http://tender.hack.spb/2/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/1/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1171606/name> ;
+    ns1:hasProductType <http://tender.hack.spb/1/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 1.1e+02 ] ;
+    ns1:token [ ns1:label "набор" ;
+            ns1:lemma "набор" ],
+        [ ns1:label "10" ;
+            ns1:lemma "10" ],
+        [ ns1:label "faber" ;
+            ns1:lemma "faber" ],
+        [ ns1:label "фломастеров" ;
+            ns1:lemma "фломастер" ],
+        [ ns1:label "клипом" ;
+            ns1:lemma "клип" ],
+        [ ns1:label "цветов" ;
+            ns1:lemma "цветок" ] .
+
+<http://tender.hack.spb/1171636> ns1:hasDeveloper <http://tender.hack.spb/1/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/1/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1171636/name> ;
+    ns1:hasProductType <http://tender.hack.spb/1/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 1.6e+02 ] ;
+    ns1:token [ ns1:label "маркеров" ;
+            ns1:lemma "маркер" ],
+        [ ns1:label "10" ;
+            ns1:lemma "10" ],
+        [ ns1:label "цветов" ;
+            ns1:lemma "цветок" ],
+        [ ns1:label "play" ;
+            ns1:lemma "play" ],
+        [ ns1:label "maxi" ;
+            ns1:lemma "maxi" ],
+        [ ns1:label "набор" ;
+            ns1:lemma "набор" ] .
+
+<http://tender.hack.spb/1171661> ns1:hasDeveloper <http://tender.hack.spb/2/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/1/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1171661/name> ;
+    ns1:hasProductType <http://tender.hack.spb/1/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 9.5e+01 ] ;
+    ns1:token [ ns1:label "футляре" ;
+            ns1:lemma "футляр" ],
+        [ ns1:label "цветов" ;
+            ns1:lemma "цветок" ],
+        [ ns1:label "шт" ;
+            ns1:lemma "шт" ],
+        [ ns1:label "grip" ;
+            ns1:lemma "grip" ],
+        [ ns1:label "фломастеры" ;
+            ns1:lemma "фломастер" ],
+        [ ns1:label "набор" ;
+            ns1:lemma "набор" ] .
+
+<http://tender.hack.spb/1171795> ns1:hasDeveloper <http://tender.hack.spb/5/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/1/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1171795/name> ;
+    ns1:hasProductType <http://tender.hack.spb/1/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 1.55e+02 ] ;
+    ns1:token [ ns1:label "blooming" ;
+            ns1:lemma "blooming" ],
+        [ ns1:label "цвета" ;
+            ns1:lemma "цвет" ],
+        [ ns1:label "24" ;
+            ns1:lemma "24" ],
+        [ ns1:label "brauberg" ;
+            ns1:lemma "brauberg" ],
+        [ ns1:label "фломастеров" ;
+            ns1:lemma "фломастер" ],
+        [ ns1:label "набор" ;
+            ns1:lemma "набор" ],
+        [ ns1:label "flowers" ;
+            ns1:lemma "flowers" ] .
+
+<http://tender.hack.spb/1171797> ns1:hasDeveloper <http://tender.hack.spb/5/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/1/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1171797/name> ;
+    ns1:hasProductType <http://tender.hack.spb/1/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 1.2e+02 ] ;
+    ns1:token [ ns1:label "цветов" ;
+            ns1:lemma "цветок" ],
+        [ ns1:label "набор" ;
+            ns1:lemma "набор" ],
+        [ ns1:label "6" ;
+            ns1:lemma "6" ],
+        [ ns1:label "фломастеров" ;
+            ns1:lemma "фломастер" ],
+        [ ns1:label "brauberg" ;
+            ns1:lemma "brauberg" ] .
+
+<http://tender.hack.spb/1171806> ns1:hasDeveloper <http://tender.hack.spb/5/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/1/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1171806/name> ;
+    ns1:hasProductType <http://tender.hack.spb/1/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 1.1e+02 ] ;
+    ns1:token [ ns1:label "wonderful" ;
+            ns1:lemma "wonderful" ],
+        [ ns1:label "фломастеров" ;
+            ns1:lemma "фломастер" ],
+        [ ns1:label "набор" ;
+            ns1:lemma "набор" ],
+        [ ns1:label "butterfly" ;
+            ns1:lemma "butterfly" ],
+        [ ns1:label "brauberg" ;
+            ns1:lemma "brauberg" ],
+        [ ns1:label "12" ;
+            ns1:lemma "12" ],
+        [ ns1:label "цветов" ;
+            ns1:lemma "цветок" ] .
+
+<http://tender.hack.spb/1171810> ns1:hasDeveloper <http://tender.hack.spb/13/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/1/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1171810/name> ;
+    ns1:hasProductType <http://tender.hack.spb/1/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 1.2e+02 ] ;
+    ns1:token [ ns1:label "флуорисцентные" ;
+            ns1:lemma "флуорисцентный" ],
+        [ ns1:label "giant" ;
+            ns1:lemma "giant" ],
+        [ ns1:label "giotto" ;
+            ns1:lemma "giotto" ],
+        [ ns1:label "turbo" ;
+            ns1:lemma "turbo" ],
+        [ ns1:label "fluo" ;
+            ns1:lemma "fluo" ],
+        [ ns1:label "6" ;
+            ns1:lemma "6" ],
+        [ ns1:label "утолщенные" ;
+            ns1:lemma "утолстить" ],
+        [ ns1:label "фломастеров" ;
+            ns1:lemma "фломастер" ],
+        [ ns1:label "набор" ;
+            ns1:lemma "набор" ],
+        [ ns1:label "цветов" ;
+            ns1:lemma "цветок" ] .
+
+<http://tender.hack.spb/1171863> ns1:hasDeveloper <http://tender.hack.spb/6/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/3/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1171863/name> ;
+    ns1:hasProductType <http://tender.hack.spb/3/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 6e+02 ] ;
+    ns1:token [ ns1:label "шт" ;
+            ns1:lemma "шт" ],
+        [ ns1:label "5" ;
+            ns1:lemma "5" ],
+        [ ns1:label "48" ;
+            ns1:lemma "48" ],
+        [ ns1:label "набор" ;
+            ns1:lemma "набор" ],
+        [ ns1:label "тетрадей" ;
+            ns1:lemma "тетрадь" ],
+        [ ns1:label "jungle" ;
+            ns1:lemma "jungle" ],
+        [ ns1:label "листов" ;
+            ns1:lemma "лист" ],
+        [ ns1:label "альт" ;
+            ns1:lemma "альт" ] .
+
+<http://tender.hack.spb/1171865> ns1:hasDeveloper <http://tender.hack.spb/6/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/3/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1171865/name> ;
+    ns1:hasProductType <http://tender.hack.spb/3/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 6e+02 ] ;
+    ns1:token [ ns1:label "5" ;
+            ns1:lemma "5" ],
+        [ ns1:label "шт" ;
+            ns1:lemma "шт" ],
+        [ ns1:label "48" ;
+            ns1:lemma "48" ],
+        [ ns1:label "тетрадей" ;
+            ns1:lemma "тетрадь" ],
+        [ ns1:label "набор" ;
+            ns1:lemma "набор" ],
+        [ ns1:label "argument" ;
+            ns1:lemma "argument" ],
+        [ ns1:label "альт" ;
+            ns1:lemma "альт" ],
+        [ ns1:label "листов" ;
+            ns1:lemma "лист" ] .
+
+<http://tender.hack.spb/1171872> ns1:hasDeveloper <http://tender.hack.spb/7/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/3/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1171872/name> ;
+    ns1:hasProductType <http://tender.hack.spb/3/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 2.7e+02 ] ;
+    ns1:token [ ns1:label "цвет" ;
+            ns1:lemma "цвета" ],
+        [ ns1:label "листов" ;
+            ns1:lemma "лист" ],
+        [ ns1:label "тетрадь" ;
+            ns1:lemma "тетрадь" ],
+        [ ns1:label "а5" ;
+            ns1:lemma "а5" ],
+        [ ns1:label "желтый" ;
+            ns1:lemma "жёлтый" ],
+        [ ns1:label "120" ;
+            ns1:lemma "120" ] .
+
+<http://tender.hack.spb/1171874> ns1:hasDeveloper <http://tender.hack.spb/7/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/3/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1171874/name> ;
+    ns1:hasProductType <http://tender.hack.spb/3/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 2.65e+02 ] ;
+    ns1:token [ ns1:label "а5" ;
+            ns1:lemma "а5" ],
+        [ ns1:label "розовый" ;
+            ns1:lemma "розовый" ],
+        [ ns1:label "листов" ;
+            ns1:lemma "лист" ],
+        [ ns1:label "120" ;
+            ns1:lemma "120" ],
+        [ ns1:label "тетрадь" ;
+            ns1:lemma "тетрадь" ],
+        [ ns1:label "цвет" ;
+            ns1:lemma "цвета" ] .
+
+<http://tender.hack.spb/1171959> ns1:hasDeveloper <http://tender.hack.spb/14/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/3/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1171959/name> ;
+    ns1:hasProductType <http://tender.hack.spb/3/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 3.4e+02 ] ;
+    ns1:token [ ns1:label "paris" ;
+            ns1:lemma "paris" ],
+        [ ns1:label "листов" ;
+            ns1:lemma "лист" ],
+        [ ns1:label "collection" ;
+            ns1:lemma "collection" ],
+        [ ns1:label "клетку" ;
+            ns1:lemma "клетка" ],
+        [ ns1:label "80" ;
+            ns1:lemma "80" ],
+        [ ns1:label "city" ;
+            ns1:lemma "city" ],
+        [ ns1:label "тетрадь" ;
+            ns1:lemma "тетрадь" ],
+        [ ns1:label "hatber" ;
+            ns1:lemma "hatber" ] .
+
+<http://tender.hack.spb/1171961> ns1:hasDeveloper <http://tender.hack.spb/14/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/3/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1171961/name> ;
+    ns1:hasProductType <http://tender.hack.spb/3/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 3.4e+02 ] ;
+    ns1:token [ ns1:label "web" ;
+            ns1:lemma "web" ],
+        [ ns1:label "клетку" ;
+            ns1:lemma "клетка" ],
+        [ ns1:label "тетрадь" ;
+            ns1:lemma "тетрадь" ],
+        [ ns1:label "листов" ;
+            ns1:lemma "лист" ],
+        [ ns1:label "80" ;
+            ns1:lemma "80" ],
+        [ ns1:label "cars" ;
+            ns1:lemma "cars" ],
+        [ ns1:label "hatber" ;
+            ns1:lemma "hatber" ] .
+
+<http://tender.hack.spb/1171976> ns1:hasDeveloper <http://tender.hack.spb/14/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/3/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1171976/name> ;
+    ns1:hasProductType <http://tender.hack.spb/3/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 2.6e+02 ] ;
+    ns1:token [ ns1:label "гребне" ;
+            ns1:lemma "гребень" ],
+        [ ns1:label "клетка" ;
+            ns1:lemma "клетка" ],
+        [ ns1:label "is" ;
+            ns1:lemma "is" ],
+        [ ns1:label "цв" ;
+            ns1:lemma "цв" ],
+        [ ns1:label "love" ;
+            ns1:lemma "love" ],
+        [ ns1:label "80л" ;
+            ns1:lemma "80л" ],
+        [ ns1:label "а5ф" ;
+            ns1:lemma "а5ф" ],
+        [ ns1:label "тетрадь" ;
+            ns1:lemma "тетрадь" ],
+        [ ns1:label "твердой" ;
+            ns1:lemma "твёрдый" ],
+        [ ns1:label "блок" ;
+            ns1:lemma "блок" ],
+        [ ns1:label "2" ;
+            ns1:lemma "2" ],
+        [ ns1:label "обложкой" ;
+            ns1:lemma "обложка" ],
+        [ ns1:label "х" ;
+            ns1:lemma "х" ] .
+
+<http://tender.hack.spb/1171978> ns1:hasDeveloper <http://tender.hack.spb/14/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/3/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1171978/name> ;
+    ns1:hasProductType <http://tender.hack.spb/3/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 2.9e+02 ] ;
+    ns1:token [ ns1:label "клетка" ;
+            ns1:lemma "клетка" ],
+        [ ns1:label "обложкой" ;
+            ns1:lemma "обложка" ],
+        [ ns1:label "flowers" ;
+            ns1:lemma "flowers" ],
+        [ ns1:label "твердой" ;
+            ns1:lemma "твёрдый" ],
+        [ ns1:label "тетрадь" ;
+            ns1:lemma "тетрадь" ],
+        [ ns1:label "96л" ;
+            ns1:lemma "96л" ],
+        [ ns1:label "гребне" ;
+            ns1:lemma "гребень" ],
+        [ ns1:label "а5ф" ;
+            ns1:lemma "а5ф" ] .
+
+<http://tender.hack.spb/1171991> ns1:hasDeveloper <http://tender.hack.spb/14/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/3/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1171991/name> ;
+    ns1:hasProductType <http://tender.hack.spb/3/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 8.4e+02 ] ;
+    ns1:token [ ns1:label "спирали" ;
+            ns1:lemma "спираль" ],
+        [ ns1:label "твердой" ;
+            ns1:lemma "твёрдый" ],
+        [ ns1:label "а4ф" ;
+            ns1:lemma "а4ф" ],
+        [ ns1:label "тетрадь" ;
+            ns1:lemma "тетрадь" ],
+        [ ns1:label "обложкой" ;
+            ns1:lemma "обложка" ],
+        [ ns1:label "160л" ;
+            ns1:lemma "160ть" ] .
+
+<http://tender.hack.spb/1171993> ns1:hasDeveloper <http://tender.hack.spb/14/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/3/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1171993/name> ;
+    ns1:hasProductType <http://tender.hack.spb/3/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 1.9e+02 ] ;
+    ns1:token [ ns1:label "серия" ;
+            ns1:lemma "серия" ],
+        [ ns1:label "тетрадь" ;
+            ns1:lemma "тетрадь" ],
+        [ ns1:label "а5ф" ;
+            ns1:lemma "а5ф" ],
+        [ ns1:label "техно" ;
+            ns1:lemma "техный" ],
+        [ ns1:label "80л" ;
+            ns1:lemma "80л" ],
+        [ ns1:label "спирали" ;
+            ns1:lemma "спираль" ] .
+
+<http://tender.hack.spb/1172010> ns1:hasDeveloper <http://tender.hack.spb/14/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/3/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1172010/name> ;
+    ns1:hasProductType <http://tender.hack.spb/3/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 1.4e+02 ] ;
+    ns1:token [ ns1:label "hatber" ;
+            ns1:lemma "hatber" ],
+        [ ns1:label "24" ;
+            ns1:lemma "24" ],
+        [ ns1:label "тетрадь" ;
+            ns1:lemma "тетрадь" ],
+        [ ns1:label "нот" ;
+            ns1:lemma "нота" ],
+        [ ns1:label "листа" ;
+            ns1:lemma "лист" ],
+        [ ns1:label "бабочки" ;
+            ns1:lemma "бабочка" ] .
+
+<http://tender.hack.spb/1172027> ns1:hasDeveloper <http://tender.hack.spb/14/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/3/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1172027/name> ;
+    ns1:hasProductType <http://tender.hack.spb/3/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 1.35e+02 ] ;
+    ns1:token [ ns1:label "скрипичный" ;
+            ns1:lemma "скрипичный" ],
+        [ ns1:label "нот" ;
+            ns1:lemma "нота" ],
+        [ ns1:label "24" ;
+            ns1:lemma "24" ],
+        [ ns1:label "hatber" ;
+            ns1:lemma "hatber" ],
+        [ ns1:label "тетрадь" ;
+            ns1:lemma "тетрадь" ],
+        [ ns1:label "листа" ;
+            ns1:lemma "лист" ],
+        [ ns1:label "ключ" ;
+            ns1:lemma "ключ" ] .
+
+<http://tender.hack.spb/1172042> ns1:hasDeveloper <http://tender.hack.spb/14/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/3/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1172042/name> ;
+    ns1:hasProductType <http://tender.hack.spb/3/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 2.7e+02 ] ;
+    ns1:token [ ns1:label "цв" ;
+            ns1:lemma "цв" ],
+        [ ns1:label "80л" ;
+            ns1:lemma "80л" ],
+        [ ns1:label "обложкой" ;
+            ns1:lemma "обложка" ],
+        [ ns1:label "тетрадь" ;
+            ns1:lemma "тетрадь" ],
+        [ ns1:label "твердой" ;
+            ns1:lemma "твёрдый" ],
+        [ ns1:label "гребне" ;
+            ns1:lemma "гребень" ],
+        [ ns1:label "клетка" ;
+            ns1:lemma "клетка" ],
+        [ ns1:label "терьер" ;
+            ns1:lemma "терьер" ],
+        [ ns1:label "а5ф" ;
+            ns1:lemma "а5ф" ],
+        [ ns1:label "блок" ;
+            ns1:lemma "блок" ],
+        [ ns1:label "2" ;
+            ns1:lemma "2" ] .
+
+<http://tender.hack.spb/1172044> ns1:hasDeveloper <http://tender.hack.spb/14/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/3/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1172044/name> ;
+    ns1:hasProductType <http://tender.hack.spb/3/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 2.4e+02 ] ;
+    ns1:token [ ns1:label "серия" ;
+            ns1:lemma "серия" ],
+        [ ns1:label "скобе" ;
+            ns1:lemma "скоба" ],
+        [ ns1:label "vk" ;
+            ns1:lemma "vk" ],
+        [ ns1:label "класс" ;
+            ns1:lemma "класс" ],
+        [ ns1:label "клетка" ;
+            ns1:lemma "клетка" ],
+        [ ns1:label "96л" ;
+            ns1:lemma "96л" ],
+        [ ns1:label "тетрадь" ;
+            ns1:lemma "тетрадь" ],
+        [ ns1:label "а5ф" ;
+            ns1:lemma "а5ф" ],
+        [ ns1:label "бизнес" ;
+            ns1:lemma "бизнес" ] .
+
+<http://tender.hack.spb/1172076> ns1:hasDeveloper <http://tender.hack.spb/14/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/3/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1172076/name> ;
+    ns1:hasProductType <http://tender.hack.spb/3/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 3e+02 ] ;
+    ns1:token [ ns1:label "4" ;
+            ns1:lemma "4" ],
+        [ ns1:label "резинке" ;
+            ns1:lemma "резинка" ],
+        [ ns1:label "обложка" ;
+            ns1:lemma "обложка" ],
+        [ ns1:label "х" ;
+            ns1:lemma "х" ],
+        [ ns1:label "diamond" ;
+            ns1:lemma "diamond" ],
+        [ ns1:label "кольцах" ;
+            ns1:lemma "кольцо" ],
+        [ ns1:label "тетрадь" ;
+            ns1:lemma "тетрадь" ],
+        [ ns1:label "а5ф" ;
+            ns1:lemma "а5ф" ],
+        [ ns1:label "неон" ;
+            ns1:lemma "неон" ],
+        [ ns1:label "пластиковая" ;
+            ns1:lemma "пластиковый" ],
+        [ ns1:label "желтая" ;
+            ns1:lemma "жёлтый" ],
+        [ ns1:label "120л" ;
+            ns1:lemma "120ть" ] .
+
+<http://tender.hack.spb/1172093> ns1:hasDeveloper <http://tender.hack.spb/14/developer> ;
+    ns1:hasGoodType <http://tender.hack.spb/3/good-type> ;
+    ns1:hasName <http://tender.hack.spb/1172093/name> ;
+    ns1:hasProductType <http://tender.hack.spb/3/product-type> ;
+    ns1:hasVolume [ ns1:label "г" ;
+            ns1:quantity 2.05e+02 ] ;
+    ns1:token [ ns1:label "скобе" ;
+            ns1:lemma "скоба" ],
+        [ ns1:label "а5ф" ;
+            ns1:lemma "а5ф" ],
+        [ ns1:label "marker" ;
+            ns1:lemma "marker" ],
+        [ ns1:label "лак" ;
+            ns1:lemma "лак" ],
+        [ ns1:label "клетка" ;
+            ns1:lemma "клетка" ],
+        [ ns1:label "серия" ;
+            ns1:lemma "серия" ],
+        [ ns1:label "96л" ;
+            ns1:lemma "96л" ],
+        [ ns1:label "выб" ;
+            ns1:lemma "выб" ],
+        [ ns1:label "тетрадь" ;
+            ns1:lemma "тетрадь" ] .
+
+<http://tender.hack.spb/0/developer> ns1:label "Polaris" .
+
+<http://tender.hack.spb/10/developer> ns1:label "Ford ." .
+
+<http://tender.hack.spb/1160255/name> ns1:label "Шуруповерт аккумуляторный ударный Hitachi WH14DL2" .
+
+<http://tender.hack.spb/1160280/name> ns1:label "Шуруповерт электрический FIT ES-281" .
+
+<http://tender.hack.spb/1160298/name> ns1:label "Дрель DeWalt DWD024" .
+
+<http://tender.hack.spb/1160299/name> ns1:label "Black&Decker KD990KA" .
+
+<http://tender.hack.spb/1160372/name> ns1:label "Black&Decker EPC14CABK дрель аккумуляторная" .
+
+<http://tender.hack.spb/1160395/name> ns1:label "Дрель ударная ЗУБР ЗДУ-1100-2 ЭРММ2" .
+
+<http://tender.hack.spb/1160427/name> ns1:label "Дрель-шуруповерт ЗУБР ЗСШ-300-2, сетевая" .
+
+<http://tender.hack.spb/1160461/name> ns1:label "Дрель ударная Ford FE1-10-B" .
+
+<http://tender.hack.spb/1160533/name> ns1:label "Дрель-шуруповерт аккумуляторная Metabo \"BS 14.4 Set\", с комплектом аксессуаров" .
+
+<http://tender.hack.spb/1160540/name> ns1:label "Дрель-шуруповерт аккумуляторная Metabo \"BS 18 LTX Impuls\"" .
+
+<http://tender.hack.spb/1160567/name> ns1:label "Дрель-шуруповерт \"Black & Decker\", аккумуляторная. BDCDD12K1" .
+
+<http://tender.hack.spb/1160574/name> ns1:label "Дрель-шуруповерт аккумуляторная \"Black & Decker\". BDCDD12K1B" .
+
+<http://tender.hack.spb/1160601/name> ns1:label "Шуруповерт ударный аккумуляторный Greenworks 24V G-MAX, без аккумулятора и зарядного устройства 3801307" .
+
+<http://tender.hack.spb/1165173/name> ns1:label "Vitek VT-1908, White напольный вентилятор" .
+
+<http://tender.hack.spb/1165175/name> ns1:label "Vitek VT-1909, White напольный вентилятор" .
+
+<http://tender.hack.spb/1165186/name> ns1:label "Polaris PUF 12 настольный вентилятор" .
+
+<http://tender.hack.spb/1165203/name> ns1:label "Delta DL-023H вентилятор" .
+
+<http://tender.hack.spb/1171591/name> ns1:label "Фломастеры 10цв Erich krause двухсторонние" .
+
+<http://tender.hack.spb/1171595/name> ns1:label "Play Doh Набор цветных фломастеров 12 шт" .
+
+<http://tender.hack.spb/1171606/name> ns1:label "Faber-Castell Набор фломастеров с клипом 10 цветов" .
+
+<http://tender.hack.spb/1171636/name> ns1:label "Play-Doh Набор маркеров Maxi 10 цветов" .
+
+<http://tender.hack.spb/1171661/name> ns1:label "Фломастеры GRIP, набор цветов, в футляре,10 шт." .
+
+<http://tender.hack.spb/1171795/name> ns1:label "Brauberg Набор фломастеров Blooming flowers 24 цвета" .
+
+<http://tender.hack.spb/1171797/name> ns1:label "Brauberg Набор фломастеров 6 цветов" .
+
+<http://tender.hack.spb/1171806/name> ns1:label "Brauberg Набор фломастеров Wonderful Butterfly 12 цветов" .
+
+<http://tender.hack.spb/1171810/name> ns1:label "Giotto Набор фломастеров Turbo Giant Fluo утолщенные флуорисцентные 6 цветов" .
+
+<http://tender.hack.spb/1171863/name> ns1:label "Набор тетрадей Альт \"Urban Jungle\", 48 листов, 5 шт" .
+
+<http://tender.hack.spb/1171865/name> ns1:label "Набор тетрадей Альт \"Ultimate Argument\", 48 листов, 5 шт" .
+
+<http://tender.hack.spb/1171872/name> ns1:label "Тетрадь \"Fluor\", цвет: желтый, 120 листов, А5" .
+
+<http://tender.hack.spb/1171874/name> ns1:label "Тетрадь \"Fluor\", цвет: розовый, 120 листов, А5" .
+
+<http://tender.hack.spb/1171959/name> ns1:label "Hatber Тетрадь City Collection Paris 80 листов в клетку" .
+
+<http://tender.hack.spb/1171961/name> ns1:label "Hatber Тетрадь Web Cars 80 листов в клетку" .
+
+<http://tender.hack.spb/1171976/name> ns1:label "Тетрадь с твердой обложкой 80л А5ф 2 х цв. блок клетка на гребне LOVE IS...." .
+
+<http://tender.hack.spb/1171978/name> ns1:label "Тетрадь с твердой обложкой 96л А5ф клетка на гребне Flowers" .
+
+<http://tender.hack.spb/1171991/name> ns1:label "Тетрадь 160л А4ф с твердой обложкой на спирали-Аквалайф-" .
+
+<http://tender.hack.spb/1171993/name> ns1:label "Тетрадь 80л А5ф на спирали серия Техно" .
+
+<http://tender.hack.spb/1172010/name> ns1:label "Hatber Тетрадь для Нот Бабочки 24 листа" .
+
+<http://tender.hack.spb/1172027/name> ns1:label "Hatber Тетрадь для нот Скрипичный ключ 24 листа" .
+
+<http://tender.hack.spb/1172042/name> ns1:label "Тетрадь с твердой обложкой 80л А5ф 2-х цв. блок клетка на гребне-Йоркширский терьер-" .
+
+<http://tender.hack.spb/1172044/name> ns1:label "VK Тетрадь 96л А5ф Класс \"С\" клетка на скобе серия Бизнес" .
+
+<http://tender.hack.spb/1172076/name> ns1:label "Тетрадь 120л А5ф на 4 х кольцах Пластиковая обложка на резинке DIAMOND НЕОН желтая" .
+
+<http://tender.hack.spb/1172093/name> ns1:label "Тетрадь 96л А5ф клетка на скобе выб лак серия Marker" .
+
+<http://tender.hack.spb/12/developer> ns1:label "Erich Krause" .
+
+<http://tender.hack.spb/13/developer> ns1:label "GIOTTO" .
+
+<http://tender.hack.spb/15/developer> ns1:label "Hitachi" .
+
+<http://tender.hack.spb/16/developer> ns1:label "FIT" .
+
+<http://tender.hack.spb/17/developer> ns1:label "DeWalt" .
+
+<http://tender.hack.spb/18/developer> ns1:label "Delta" .
+
+<http://tender.hack.spb/8/developer> ns1:label "Greenworks" .
+
+<http://tender.hack.spb/1/developer> ns1:label "Play-Doh" .
+
+<http://tender.hack.spb/11/developer> ns1:label "Vitek" .
+
+<http://tender.hack.spb/2/developer> ns1:label "Faber-Castell" .
+
+<http://tender.hack.spb/4/developer> ns1:label "Metabo" .
+
+<http://tender.hack.spb/6/developer> ns1:label "Альт" .
+
+<http://tender.hack.spb/7/developer> ns1:label "Erich Krause Deutschland GmbH" .
+
+<http://tender.hack.spb/9/developer> ns1:label "Зубр" .
+
+<http://tender.hack.spb/5/developer> ns1:label "Brauberg" .
+
+<http://tender.hack.spb/0/good-type> ns1:label "Вентиляторы" ;
+    ns1:token [ ns1:label "вентиляторы" ;
+            ns1:lemma "вентилятор" ] .
+
+<http://tender.hack.spb/0/product-type> ns1:label "Вентиляция" ;
+    ns1:token [ ns1:label "вентиляция" ;
+            ns1:lemma "вентиляция" ] .
+
+<http://tender.hack.spb/3/developer> ns1:label "Black & Decker" .
+
+<http://tender.hack.spb/1/good-type> ns1:label "Фломастеры для письма" ;
+    ns1:token [ ns1:label "письма" ;
+            ns1:lemma "письмо" ],
+        [ ns1:label "фломастеры" ;
+            ns1:lemma "фломастер" ] .
+
+<http://tender.hack.spb/1/product-type> ns1:label "Фломастеры" ;
+    ns1:token [ ns1:label "фломастеры" ;
+            ns1:lemma "фломастер" ] .
+
+<http://tender.hack.spb/14/developer> ns1:label "Hatber" .
+
+<http://tender.hack.spb/2/good-type> ns1:label "Дрели" ;
+    ns1:token [ ns1:label "дрели" ;
+            ns1:lemma "дрель" ] .
+
+<http://tender.hack.spb/2/product-type> ns1:label "Строительный инвентарь" ;
+    ns1:token [ ns1:label "инвентарь" ;
+            ns1:lemma "инвентарь" ],
+        [ ns1:label "строительный" ;
+            ns1:lemma "строительный" ] .
+
+<http://tender.hack.spb/3/good-type> ns1:label "Тетради" ;
+    ns1:token [ ns1:label "тетради" ;
+            ns1:lemma "тетрадь" ] .
+
+<http://tender.hack.spb/3/product-type> ns1:label "Деловая бумажная продукция" ;
+    ns1:token [ ns1:label "продукция" ;
+            ns1:lemma "продукция" ],
+        [ ns1:label "деловая" ;
+            ns1:lemma "деловой" ],
+        [ ns1:label "бумажная" ;
+            ns1:lemma "бумажный" ] .
