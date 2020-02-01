@@ -18,16 +18,18 @@ def get_products(lemma, label):
 def get_relevant_products(tokens, quantity=5, weight=1):
 	scores = {}
 	names = {}
+	keywords = {}
 	for lemma, label in tokens:
 		uris, names_ = get_products(lemma, label)
 		for uri in uris:
 			if uri in scores:
 				scores[uri] += 1
-				#print(names[uri])
+				keywords[uri].append(lemma)
 			else:
 				scores[uri] = 1
 				names[uri] = names_[uri]
-	results = {item[0]: {"name": names[item[0]], "score": item[1]*weight} for item in sorted([(key, scores[key]) for key in scores], key = lambda item: -item[1])[:quantity]}
+				keywords[uri] = [lemma]
+	results = {item[0]: {"name": names[item[0]], "score": item[1]*weight, "keywords": keywords[item[0]]} for item in sorted([(key, scores[key]) for key in scores], key = lambda item: -item[1])[:quantity]}
 	return results
 
 if __name__ == "__main__":

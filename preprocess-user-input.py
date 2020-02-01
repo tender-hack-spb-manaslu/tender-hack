@@ -37,29 +37,35 @@ def merge(dict1, dict2):
 	for product in dict2:
 		if product in dict1:
 			dict1[product]['score'] += dict2[product]['score']
+			dict1[product]['keywords'] = list(set(dict2[product]['keywords'] + dict1[product]['keywords']))
 		else:
 			dict1[product] = dict2[product]
 	return dict1
 
-def search(query, fix_misspellings=False, use_embeddings=False, w2v=None):
+def search(query, fix_misspellings=False, use_embeddings=False, w2v=None, similar_tokens_score_weight=0.5, similar_tokens_quantity=2, products_quantity=5, similar_products_quantity=5, verbose=False, min_word_difference_ratio=50):
 	user_input = query
 
 	tokenizer = RegexpTokenizer('\w+|\$[\d\.]+|\S+')
 	morph = pymorphy2.MorphAnalyzer()
 	russian_stopwords = stopwords.words("russian")
 
-	tokenized_user_input = list(map(fix_misspelling if fix_misspellings else lambda i: i, [token for token in tokenizer.tokenize(user_input) if token not in russian_stopwords]))
+	tokenized_user_input = list(map(lambda word: fix_misspelling(word, min_ratio = min_word_difference_ratio, verbose = verbose) if fix_misspellings else lambda i: i, [token for token in tokenizer.tokenize(user_input) if token not in russian_stopwords]))
 	tokens = [token for token in tokenized_user_input]
 	#print(tokens)
 	lemmas = [morph.parse(token)[0].normal_form for token in tokenized_user_input]
 	#elmo = build_model(deeppavlov.configs.elmo_embedder.elmo_ru_wiki, download=True)
-	products = aggregate.get_relevant_products(zip(lemmas, tokens))
+	if verbose:
+		print(f"tokens: {tokens}")
+		print(f"lemmas: {lemmas}")
+	products = aggregate.get_relevant_products(zip(lemmas, tokens), quantity=products_quantity)
 	
 	if use_embeddings and w2v is not None:
-		similar_tokens = [token for token in list(set(itertools.chain(*[list(map(lambda pair: pair[0], w2v.most_similar(token, topn=2))) for token in tokens]))) if morph.parse(token)[0].normal_form not in lemmas]
+		similar_tokens = [token for token in list(set(itertools.chain(*[list(map(lambda pair: pair[0], w2v.most_similar(token, topn=similar_tokens_quantity))) for token in tokens]))) if morph.parse(token)[0].normal_form not in lemmas]
 		similar_lemmas = [morph.parse(token)[0].normal_form for token in similar_tokens]
-		print(similar_tokens, similar_lemmas)
-		similar_products = aggregate.get_relevant_products(zip(similar_lemmas, similar_tokens), weight=0.5)
+		if verbose:
+			print(f"similar tokens: {similar_tokens}")
+			print(f"similar lemmas: {similar_lemmas}")
+		similar_products = aggregate.get_relevant_products(zip(similar_lemmas, similar_tokens), quantity=similar_products_quantity, weight=similar_tokens_score_weight)
 		return merge(products, similar_products)
 	else:
 		return products
