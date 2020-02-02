@@ -7,7 +7,7 @@ from rdflib import Graph
 from nltk.corpus import stopwords
 import re
 
-from pymantic import sparql
+
 from deeppavlov import build_model
 import deeppavlov
 import numpy as np
@@ -23,7 +23,6 @@ aggregate = __import__("aggregate-lemma-querying-results")
 # Loading data to Blazegraph
 #server.update('load <file:///tmp/data.n3>')
 
-server = sparql.SPARQLServer('http://ec2-3-12-83-166.us-east-2.compute.amazonaws.com/bigdata/sparql')
 
 # Loading data to Blazegraph
 #server.update('load <file:///tmp/data.ttl>')
@@ -42,7 +41,7 @@ def merge(dict1, dict2):
 			dict1[product] = dict2[product]
 	return dict1
 
-def search(query, fix_misspellings=False, use_embeddings=False, w2v=None, similar_tokens_score_weight=0.5, similar_tokens_quantity=2, products_quantity=5, similar_products_quantity=5, verbose=False, min_word_difference_ratio=50):
+def search(query, fix_misspellings=False, use_embeddings=False, w2v=None, similar_tokens_score_weight=0.5, similar_tokens_quantity=2, products_quantity=5, similar_products_quantity=5, verbose=False, min_word_difference_ratio=50, sparql_server=None):
 	user_input = query
 
 	tokenizer = RegexpTokenizer('\w+|\$[\d\.]+|\S+')
@@ -58,7 +57,7 @@ def search(query, fix_misspellings=False, use_embeddings=False, w2v=None, simila
 	if verbose:
 		print(f"tokens: {tokens}")
 		print(f"lemmas: {lemmas}")
-	products = aggregate.get_relevant_products(zip(lemmas, tokens), quantity=products_quantity)
+	products = aggregate.get_relevant_products(zip(lemmas, tokens), quantity=products_quantity, server=sparql_server)
 	
 	if use_embeddings and w2v is not None:
 		similar_tokens = [token for token in list(set(itertools.chain(*[list(map(lambda pair: pair[0], w2v.most_similar(token, topn=similar_tokens_quantity))) for token in tokens]))) if morph.parse(token)[0].normal_form not in lemmas]
@@ -66,7 +65,7 @@ def search(query, fix_misspellings=False, use_embeddings=False, w2v=None, simila
 		if verbose:
 			print(f"similar tokens: {similar_tokens}")
 			print(f"similar lemmas: {similar_lemmas}")
-		similar_products = aggregate.get_relevant_products(zip(similar_lemmas, similar_tokens), quantity=similar_products_quantity, weight=similar_tokens_score_weight)
+		similar_products = aggregate.get_relevant_products(zip(similar_lemmas, similar_tokens), quantity=similar_products_quantity, weight=similar_tokens_score_weight, server=sparql_server)
 		return merge(products, similar_products)
 	else:
 		return products

@@ -3,7 +3,7 @@ import json
 from gensim.models import KeyedVectors
 from gensim.test.utils import datapath
 import argparse
-
+from pymantic import sparql
 # w2v path example: "/home/dima/models/ArModel100w2v.txt"
 
 processor = __import__('preprocess-user-input')
@@ -30,7 +30,8 @@ def foo():
         products_quantity = data['products-quantity'] if 'products-quantity' in data else 5,
         similar_products_quantity = data['similar-products-quantity'] if 'similar-products-quantity' in data else 5,
         verbose = args.verbose,
-        min_word_difference_ratio = data['min-word-difference-ratio'] if 'min-word-difference-ratio' in data else 50
+        min_word_difference_ratio = data['min-word-difference-ratio'] if 'min-word-difference-ratio' in data else 50,
+        sparql_server = sparql.SPARQLServer(f'http://{args.sparql_host}:9999/bigdata/sparql')
     )).encode().decode("utf-8")
     return response
 
@@ -38,6 +39,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--w2v', type=str, default=None)
+    parser.add_argument('--sparql_host', type=str, default="localhost")
     parser.add_argument('--port', type=int, default=5000)
     parser.add_argument('--debug', action="store_true")
     parser.add_argument('--verbose', action="store_true")
