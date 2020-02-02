@@ -31,9 +31,13 @@ def foo():
         similar_products_quantity = data['similar-products-quantity'] if 'similar-products-quantity' in data else 5,
         verbose = args.verbose,
         min_word_difference_ratio = data['min-word-difference-ratio'] if 'min-word-difference-ratio' in data else 50,
-        sparql_server = sparql.SPARQLServer(f'http://{args.sparql_host}:9999/bigdata/sparql')
+        sparql_server = sparql.SPARQLServer(f'http://{args.sparql_host}:9999/bigdata/sparql'),
+        enable_good_type_diversity = data['enable-good-type-diversity'] if 'enable-good-type-diversity' in data else False,
+        enable_product_type_diversity = data['enable-product-type-diversity'] if 'enable-product-type-diversity' in data else False,
+        enable_developer_diversity = data['enable-developer-diversity'] if 'enable-developer-diversity' in data else False,
+        enable_transliteration = data['enable-transliteration'] if 'enable-transliteration' in data else False
     )).encode().decode("utf-8")
-    return response
+    return response, 200, {'Content-Type': 'application/json; charset=utf-8'}
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -48,4 +52,4 @@ if __name__ == '__main__':
 
     if args.w2v is not None:
         embeddings[W2V_EMBEDDINGS] = KeyedVectors.load_word2vec_format(datapath(args.w2v), binary=False)
-    app.run(debug=args.debug, port=args.port)
+    app.run(debug=args.debug, port=args.port, host="0.0.0.0")

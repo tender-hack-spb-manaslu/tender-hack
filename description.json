@@ -1,0 +1,27 @@
+{
+	"query": "дрель zubr",
+	"fix-misspellings": true,
+	"use-embeddings": true,
+	"similar-tokens-score-weight": 1.5,
+	"similar-tokens-quantity": 10,
+	"products-quantity": 10,
+	"similar-products-quantity": 20,
+	"min-word-difference-ratio": 87,
+	"enable-good-type-diversity": false,
+	"enable-product-type-diversity": false,
+	"enable-developer-diversity": false,
+	"enable-transliteration": true
+}
+
+- query - запрос для поиска
+- fix-misspellings - нужно ли исправлять опечатки путем подсчета расстояния Левенштайна
+- use-embeddings - нужно ли использовать векторные представления для поиска семантически близких слов
+- similar-tokens-score-weight - вес совпавших токенов, полученных при помощи векторных представлений
+- similar-tokens-quantity - сколько надо извлекать семантически близких токенов для каждого токена
+- products-quantity - сколько продуктов, найденных по исходным токенам, надо возвращать
+- similar-products-quantity - сколько продуктов, найденных по семантически близким токенам, надо возвращать
+- min-word-difference-ratio - величина, показывающая, на сколько максимально могут различаться по расстоянию Левенштайна слово с предполагаемой опечаткой и исправленное слово для исправления
+- enable-transliteration - надо ли делать транслитерацию
+- enable-good-type-diversity - требуется ли разнообразие продукта по типу товара
+- enable-product-type-diversity - требуется ли разнообразие продуктов по типу продукта
+- enable-developer-diversity - требуется ли разнообразие продуктов по производителю
