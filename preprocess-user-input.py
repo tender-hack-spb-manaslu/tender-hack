@@ -68,7 +68,7 @@ def search(query, fix_misspellings=False, use_embeddings=False, w2v=None, simila
 		enable_good_type_diversity=enable_good_type_diversity)
 	
 	if use_embeddings and w2v is not None:
-		similar_tokens = [token for token in list(set(itertools.chain(*[list(map(lambda pair: pair[0], w2v.most_similar(token, topn=similar_tokens_quantity))) for token in tokens]))) if morph.parse(token)[0].normal_form not in lemmas]
+		similar_tokens = [token for token in list(set(itertools.chain(*[list(map(lambda pair: pair[0], w2v.most_similar(token, topn=similar_tokens_quantity))) for token in tokens if token in w2v.vocab]))) if morph.parse(token)[0].normal_form not in lemmas]
 		similar_lemmas = [morph.parse(token)[0].normal_form for token in similar_tokens]
 		if enable_transliteration:
 			similar_tokens = similar_tokens + ([translit(token, 'ru', reversed=not english_token_pattern.match(token)) for token in similar_tokens] if enable_transliteration else [])
