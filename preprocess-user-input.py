@@ -23,7 +23,7 @@ aggregate = __import__("aggregate-lemma-querying-results")
 # Loading data to Blazegraph
 #server.update('load <file:///tmp/data.n3>')
 
-server = sparql.SPARQLServer('https://tender-hack-spb-manaslu.aa13q.ru/bigdata/sparql')
+server = sparql.SPARQLServer('http://ec2-3-12-83-166.us-east-2.compute.amazonaws.com/bigdata/sparql')
 
 # Loading data to Blazegraph
 #server.update('load <file:///tmp/data.ttl>')
@@ -49,9 +49,10 @@ def search(query, fix_misspellings=False, use_embeddings=False, w2v=None, simila
 	morph = pymorphy2.MorphAnalyzer()
 	russian_stopwords = stopwords.words("russian")
 
-	tokenized_user_input = list(map(lambda word: fix_misspelling(word, min_ratio = min_word_difference_ratio, verbose = verbose) if fix_misspellings else lambda i: i, [token for token in tokenizer.tokenize(user_input) if token not in russian_stopwords]))
+	tokenized_user_input = list(map(lambda word: fix_misspelling(word, min_ratio = min_word_difference_ratio, verbose = verbose) if fix_misspellings else word, [token for token in tokenizer.tokenize(user_input) if token not in russian_stopwords]))
 	tokens = [token for token in tokenized_user_input]
 	#print(tokens)
+	print(tokenized_user_input)
 	lemmas = [morph.parse(token)[0].normal_form for token in tokenized_user_input]
 	#elmo = build_model(deeppavlov.configs.elmo_embedder.elmo_ru_wiki, download=True)
 	if verbose:
